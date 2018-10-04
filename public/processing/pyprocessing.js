@@ -2,7 +2,7 @@ var jspyProcessingWindow = null;
 function runPyProcessing(pyprocessingcode)
 {
 	jspyProcessingWindow = window.open('', "_blank", '');
-	html1 = '<head><title>jspy.Processing</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/><base href="http://class.zenine.com/public/"><script language="javascript" type="text/javascript" src="p5/p5.js"></script'+'><script language="javascript" type="text/javascript" src="p5/p5.dom.js"></script'+'><script language="javascript" type="text/javascript" src="p5/p5.sound.js"></script'+'><script type="text/javascript" src="brython/brython.js"></script'+'><style> body {padding: 0; margin: 0;} </style></head><body onload="brython()"><script type="text/python">\
+	html1 = '<head><title>jspy.Processing</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/><base href="http://class.zenine.com/public/"><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.js"></script'+'><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.dom.js"></script'+'><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.sound.js"></script'+'><script type="text/javascript" src="http://class.zenine.com/public/brython/brython.js"></script'+'><style> body {padding: 0; margin: 0;} </style></head><body onload="brython()"><script type="text/python">\
 from browser import document, window, alert\n\
 \n\
 def sketch(p5):\n\
