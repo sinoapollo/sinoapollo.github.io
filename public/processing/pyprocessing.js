@@ -9,7 +9,7 @@ def sketch(p5):\n\
 \n\
 	PI = p5.PI\n\
 	P2D = p5.P2D\n\
-	WEBGL = p5.WEBGL\n\
+	P3D = p5.WEBGL\n\
 	ARROW = p5.ARROW\n\
 	CROSS = p5.CROSS\n\
 	HAND = p5.HAND\n\
