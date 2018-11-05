@@ -7,7 +7,100 @@ from browser import document, window, alert\n\
 \n\
 def sketch(p5):\n\
 \n\
-	P3D = p5.WEBGL\n\
+	PI = p5.PI\n\
+	P2D = p5.P2D\n\
+	WEBGL = p5.WEBGL\n\
+	ARROW = p5.ARROW\n\
+	CROSS = p5.CROSS\n\
+	HAND = p5.HAND\n\
+	MOVE = p5.MOVE\n\
+	TEXT = p5.TEXT\n\
+	WAIT = p5.WAIT\n\
+	HALF_PI: = p5.HALF_PI\n\
+	QUARTER_PI = p5.QUARTER_PI\n\
+	TWO_PI: PI = p5.TWO_PI\n\
+	DEGREES = p5.DEGREES\n\
+	RADIANS = p5.RADIANS\n\
+	CORNER = p5.CORNER\n\
+	CORNERS = p5.CORNERS\n\
+	RADIUS = p5.RADIUS\n\
+	RIGHT = p5.RIGHT\n\
+	LEFT = p5.LEFT\n\
+	CENTER = p5.CENTER\n\
+	TOP = p5.TOP\n\
+	BOTTOM = p5.BOTTOM\n\
+	BASELINE = p5.BASELINE\n\
+	POINTS = p5.POINTS\n\
+	LINES = p5.LINES\n\
+	LINE_STRIP = p5.LINE_STRIP\n\
+	LINE_LOOP = p5.LINE_LOOP\n\
+	TRIANGLES = p5.TRIANGLES\n\
+	TRIANGLE_FAN = p5.TRIANGLE_FAN\n\
+	TRIANGLE_STRIP = p5.TRIANGLE_STRIP\n\
+	QUADS = p5.QUADS\n\
+	QUAD_STRIP = p5.QUAD_STRIP\n\
+	CLOSE = p5.CLOSE\n\
+	OPEN = p5.OPEN\n\
+	CHORD = p5.CHORD\n\
+	PIE = p5.PIE\n\
+	PROJECT = p5.PROJECT\n\
+	SQUARE = p5.SQUARE\n\
+	ROUND = p5.ROUND\n\
+	BEVEL = p5.BEVEL\n\
+	MITER = p5.MITER\n\
+	RGB = p5.RGB\n\
+	HSB = p5.HSB\n\
+	HSL = p5.HSL\n\
+	AUTO = p5.AUTO\n\
+	ALT = p5.ALT\n\
+	BACKSPACE = p5.BACKSPACE\n\
+	CONTROL = p5.CONTROL\n\
+	DELETE = p5.DELETE\n\
+	DOWN_ARROW = p5.DOWN_ARROW\n\
+	ENTER = p5.ENTER\n\
+	ESCAPE = p5.ESCAPE\n\
+	LEFT_ARROW = p5.LEFT_ARROW\n\
+	OPTION = p5.OPTION\n\
+	RETURN = p5.RETURN\n\
+	RIGHT_ARROW = p5.RIGHT_ARROW\n\
+	SHIFT = p5.SHIFT\n\
+	TAB = p5.TAB\n\
+	UP_ARROW = p5.UP_ARROW\n\
+	BLEND = p5.BLEND\n\
+	ADD = p5.ADD\n\
+	SUBTRACT = p5.SUBTRACT\n\
+	DARKEST = p5.DARKEST\n\
+	LIGHTEST = p5.LIGHTEST\n\
+	DIFFERENCE = p5.DIFFERENCE\n\
+	EXCLUSION = p5.EXCLUSION\n\
+	MULTIPLY = p5.MULTIPLY\n\
+	SCREEN = p5.SCREEN\n\
+	REPLACE = p5.REPLACE\n\
+	OVERLAY = p5.OVERLAY\n\
+	HARD_LIGHT = p5.HARD_LIGHT\n\
+	SOFT_LIGHT = p5.SOFT_LIGHT\n\
+	DODGE = p5.DODGE\n\
+	BURN = p5.BURN\n\
+	THRESHOLD = p5.THRESHOLD\n\
+	GRAY = p5.GRAY\n\
+	OPAQUE = p5.OPAQUE\n\
+	INVERT = p5.INVERT\n\
+	POSTERIZE = p5.POSTERIZE\n\
+	DILATE = p5.DILATE\n\
+	ERODE = p5.ERODE\n\
+	BLUR = p5.BLUR\n\
+	NORMAL = p5.NORMAL\n\
+	ITALIC = p5.ITALIC\n\
+	BOLD = p5.BLUR\n\
+	_DEFAULT_TEXT_FILL = p5._DEFAULT_TEXT_FILL\n\
+	_DEFAULT_LEADMULT = p5._DEFAULT_LEADMULT\n\
+	_CTX_MIDDLE = p5._CTX_MIDDLE\n\
+	LINEAR = p5.LINEAR\n\
+	QUADRATIC = p5.QUADRATIC\n\
+	BEZIER = p5.BEZIER\n\
+	CURVE = p5.CURVE\n\
+	_DEFAULT_STROKE = p5._DEFAULT_STROKE\n\
+	_DEFAULT_FILL = p5._DEFAULT_FILL\n\
 \n\
 #Environment\n\
 	cursor = p5.cursor\n\
@@ -401,6 +494,11 @@ html2 = '\n\n\
 myp5 = window.p5.new(sketch)\n\
 </script'+'>\n\
 </body></html>';
+	if (-1 == pyprocessingcode.indexOf('def setup():')) {
+		pyprocessingcode = 'def setup():\n\t' + pyprocessingcode.
+		 	replace(/\ {4}/g, '\t').
+		 	replace(/\n/g, '\n\t')
+	}
 	jspyProcessingWindow.document.write(html1
 		 + '\t' + pyprocessingcode.
 		 	replace(/\ {4}/g, '\t').
