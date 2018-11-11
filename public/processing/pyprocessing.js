@@ -16,9 +16,9 @@ def sketch(p5):\n\
 	MOVE = p5.MOVE\n\
 	TEXT = p5.TEXT\n\
 	WAIT = p5.WAIT\n\
-	HALF_PI: = p5.HALF_PI\n\
+	HALF_PI = p5.HALF_PI\n\
 	QUARTER_PI = p5.QUARTER_PI\n\
-	TWO_PI: PI = p5.TWO_PI\n\
+	TWO_PI = p5.TWO_PI\n\
 	DEGREES = p5.DEGREES\n\
 	RADIANS = p5.RADIANS\n\
 	CORNER = p5.CORNER\n\
