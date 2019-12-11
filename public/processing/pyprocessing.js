@@ -148,7 +148,7 @@ def sketch(p5):\n\
 	quad = p5.quad\n\
 	rect = p5.rect\n\
 	triangle = p5.triangle\n\
-	circle = p5.circle\n\
+	#circle = p5.circle\n\
 	square = p5.square\n\
 \n\
 #Curves\n\
