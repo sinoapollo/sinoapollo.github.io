@@ -149,7 +149,7 @@ def sketch(p5):\n\
 	rect = p5.rect\n\
 	triangle = p5.triangle\n\
 	#circle = p5.circle\n\
-	square = p5.square\n\
+	#square = p5.square\n\
 \n\
 #Curves\n\
 	bezier = p5.bezier\n\
