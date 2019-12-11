@@ -2,7 +2,7 @@ var jspyProcessingWindow = null;
 function runPyProcessing(pyprocessingcode)
 {
 	jspyProcessingWindow = window.open('', "_blank", '');
-	html1 = '<head><title>jspy.Processing</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/><base href="http://class.zenine.com/public/"><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.js"></script'+'><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.dom.js"></script'+'><script language="javascript" type="text/javascript" src="http://class.zenine.com/public/p5/p5.sound.js"></script'+'><script type="text/javascript" src="http://class.zenine.com/public/brython/brython.js"></script'+'><style> body {padding: 0; margin: 0;} </style></head><body onload="brython()"><script type="text/python">\
+	html1 = '<head><title>jspy.Processing</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/><base href="' + window.location + '"><script language="javascript" type="text/javascript" src="p5/p5.js"></script'+'><script language="javascript" type="text/javascript" src="p5/p5.dom.js"></script'+'><script language="javascript" type="text/javascript" src="p5/p5.sound.js"></script'+'><script type="text/javascript" src="brython/brython.js"></script'+'><style> body {padding: 0; margin: 0;} </style></head><body onload="brython()"><script type="text/python">\
 from browser import document, window, alert\n\
 \n\
 def sketch(p5):\n\
@@ -148,6 +148,8 @@ def sketch(p5):\n\
 	quad = p5.quad\n\
 	rect = p5.rect\n\
 	triangle = p5.triangle\n\
+	circle = p5.circle\n\
+	square = p5.square\n\
 \n\
 #Curves\n\
 	bezier = p5.bezier\n\
@@ -515,6 +517,8 @@ myp5 = window.p5.new(sketch)\n\
 		 	replace(/\bframeCount\b(?!\()/g, 'p5.frameCount').
 		 	replace(/\bdisplayHeight\b(?!\()/g, 'p5.displayHeight').
 		 	replace(/\bdisplayWidth\b(?!\()/g, 'p5.displayWidth').
+		 	replace(/\bwindowHeight\b(?!\()/g, 'p5.windowHeight').
+		 	replace(/\bwindowWidth\b(?!\()/g, 'p5.windowWidth').
 		 	replace(/\bfocused\b(?!\()/g, 'p5.focused').
 		 	replace(/\bheight\b(?!\()/g, 'p5.height').
 		 	replace(/\bwidth\b(?!\()/g, 'p5.width')
