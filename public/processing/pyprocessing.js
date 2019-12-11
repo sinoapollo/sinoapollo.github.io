@@ -445,6 +445,10 @@ def sketch(p5):\n\
 ';
 html2 = '\n\n\
 	try:\n\
+		p5.preload = preload\n\
+	except NameError:\n\
+		pass\n\
+	try:\n\
 		p5.setup = setup\n\
 	except NameError:\n\
 		pass\n\
