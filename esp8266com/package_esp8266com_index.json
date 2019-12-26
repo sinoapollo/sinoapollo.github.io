@@ -12,7 +12,7 @@
         {
           "category": "ESP8266",
           "name": "esp8266",
-          "url": "https://sinoapollo.github.io/esp8266com/esp8266-2.6.3.zip",
+          "url": "https://class.zenine.com/esp8266com/esp8266-2.6.3.zip",
           "version": "2.6.3",
           "architecture": "esp8266",
           "archiveFileName": "esp8266-2.6.3.zip",
